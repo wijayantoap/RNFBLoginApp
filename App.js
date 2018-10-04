@@ -15,7 +15,7 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 
 const initialState = {
-  userName : 'PROPS',
+  userName : '',
   userImage : ''
 }
 
@@ -48,18 +48,6 @@ const store = createStore(reducer);
 
 type Props = {};
 export default class App extends Component<Props> {
-
-  _fbAuth() {
-    LoginManager.logInWithReadPermissions(['public_profile']).then(function(result) {
-      if (result.isCancelled) {
-        console.log('Login Success');
-      } else {
-        console.log("Login failed" + result.grantedPermissions.toString());
-      }
-    }, function(error) {
-      console.log('An error occured' + error);
-    })
-  }
 
   render() {
     return (

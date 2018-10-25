@@ -80,6 +80,3 @@ const AppStackNavigator = createStackNavigator({
   Home: HomeScreen
 })
 ```
-For this, I use normal navigation that does not include redux integration.
-I have been trying to understand on how to use React Navigation, however I didn't manage to implement it.
-the documentation (https://reactnavigation.org/docs/en/redux-integration.html && https://v1.reactnavigation.org/docs/redux-integration.html) says that " *You probably do not need to do this! Storing your React Navigation state in your own Redux store is likely to give you a very difficult time if you don't know what you're doing.* " :D
